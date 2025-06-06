@@ -1,11 +1,17 @@
 {
-  "wrapper": "div#div_id.div_class[attribute-one=value]",
   "sections": {
     "main": {
-      "type": "product"
+      "type": "product",
+      "settings": {
+        "show_vendor": true
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations"
     }
   },
   "order": [
-    "main"
+    "main",
+    "recommendations"
   ]
 }
